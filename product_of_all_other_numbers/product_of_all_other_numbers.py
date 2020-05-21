@@ -2,7 +2,6 @@
 Input: a List of integers
 Returns: a List of integers
 '''
-new = []
 
 def multiplyList(myList) : 
     result = 1
@@ -12,6 +11,7 @@ def multiplyList(myList) :
 
 def product_of_all_other_numbers(arr):
     # Your code here
+    new = []
     for i in range(len(arr)):
         temp = arr.copy()
         temp.pop(i)
