@@ -4,9 +4,14 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    no_dups = []
 
-    pass
-
+    for x in arr:
+        if x not in no_dups:
+            no_dups.append(x)
+        else:
+            no_dups.remove(x)
+    return no_dups[0]
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
